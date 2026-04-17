@@ -1,0 +1,78 @@
+<center>
+    <h1 class="h1">Let's Check Your Luck</h1>
+</center>
+<center><div><h1>Guess the number from 1 to 10 🤔</h1>
+<input type="number" id="num">
+<button onclick="check()"id="check">check</button>
+<p id="result"></p>
+<p id="score"></p>
+<p id="remaining"></p>
+</div>
+</center>
+<script>
+    var score=5
+    var remaining=100
+    var b=Math.floor(Math.random()*10)+1
+    var gameover=false
+    
+    function check(){
+        var c=document.getElementById("num").value
+        
+    var d=Number(c)
+    if(gameover){
+        return 
+    }
+    if(b==d){
+       document.getElementById("result").textContent="YOU WIN 🎉"
+       document.getElementById("score").textContent="Remaining:"+score
+       document.getElementById("remaining").textContent="Score:"+remaining
+       gameover=true
+    }else{
+        score--
+        remaining=remaining-20
+        if(score==0){
+            document.getElementById("result").textContent="GAME OVER 💀"
+            document.getElementById("score").textContent="Remaining:"+score
+            gameover=true
+        }else{
+        document.getElementById("result").textContent="YOU ARE WRONG ❌"
+       document.getElementById("score").textContent="Remaining:"+score
+        }
+    }
+    
+        
+    }
+</script>
+<style>
+    div{
+        
+        padding: 15px;
+        margin-top: 250px;
+        height:200px;
+        width:500px;
+        background-color:black;
+        color:white;
+        border-color: dimgray;
+        border-width: 5px;
+        border-style: solid;
+    }
+    body{
+        background:bisque;
+        background-image: url(OIP.jpg);
+    }
+    .h1{
+        margin-top: 20px;
+        font-style: italic;
+        display: inline;
+        background-color: cornsilk;
+    }
+    #check{
+        background-color: brown;
+        height: 20px;
+        color:white;
+    }
+    #num{
+        height:30px;
+    }
+
+</style>
