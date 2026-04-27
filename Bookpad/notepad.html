@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>NOTEPAD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="head">
+    <center>
+    <h1>BOOKPAD🗒️</h1>
+    </center>
+</div>
+<button onclick="show()" id="addbutton">+</button>
+<div class="overlay">
+
+<center>
+    
+<div class="pop">
+    <form>
+        <table>
+            <tr>
+                <td></td><td><h1>ADD BOOK</h1></td>
+            </tr>
+            <tr>
+                <td>TITLE</td><td><input type="text"  class="input" id="name" placeholder="Book Title"></td>
+            </tr>
+            <tr>
+                <td>AUTHOR</td> <td><input type="text"  class="input" id="author" placeholder="Author"></td>
+            </tr>
+            <tr>
+                <tr><td>Status</td>
+                    <td>
+                    <select id="option" onclick="s()">
+                        <option>Pending</option>
+                        <option>In-progress</option>
+                        <option>Completed</option>
+                    </select>
+                    </td>
+                </tr>
+                <td></td><td><textarea rows="4" cols="30" id="dec"></textarea></td>
+            </tr>
+        </table>
+    </form>
+    <button onclick="save()" id="save">save</button>
+    <button onclick="closepop()" id="cancel">cancel</button>
+    
+</div>
+</div>
+</center>
+<div id="ul">
+<ol >
+
+</ol>
+</div>
+<script src="function.js"></script>    
+</body>
+</html>
