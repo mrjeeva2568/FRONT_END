@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-black flex justify-between">
+        <h1 class="text-white p-5 text-4xl" >KR Learning Platform</h1>
+        <ul class="text-white space-x-3 flex mr-2 mt-6" >
+            <li class="li hover:underline"><a href="https://in.linkedin.com/">LinkedIn</a></li>
+            <li class="li hover:underline"><a href="https://www.youtube.com/">Youtube</a></li>
+            <li class="li hover:underline"><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+
+    </div>
+    <div class="flex bg-blue-600 h-10 p-2 gap-7 justify-center text-white mt-05">
+        
+        <button class="cursor-pointer hover:font-bold"><a href="home.html">Home</a></button>
+        <button class="cursor-pointer hover:font-bold"><a href="about.html">About</a></button>
+        <button class="cursor-pointer hover:font-bold"><a href="course.html">Course</a></button>
+        
+
+    </div>
+
+    <div class="mt-6 flex justify-around" id="b">
+
+        <div class=" text-white relative bg-black/50 w-full h-150">
+            <h1 class="pt-5 pl-5 text-3xl font-serif">Program Learning</h1>
+            <p class="p-3">⭐⭐⭐⭐⭐</p>
+            <p class="p-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis</p>
+            <ul class="p-7 space-y-3">
+                <li>✅
+                    Real time experts as trainers</li>
+                <li>✅ Certifications</li>
+                <li>✅ Flexibility</li>
+                <li>✅ LIVE project</li>
+                <li>✅ Afforable fee</li>
+                <li>✅ Placement Supports</li>
+            </ul>
+            <button class="bg-blue-600 p-3 rounded-2xl cursor-pointer shadow-blue-500" id="contact">📞Contact
+                Us</button>
+            <div class="rounded-2xl" id="register">
+                <h2 class="text-black font-bold text-2xl text-center mt-4 mb-4">
+                    Enquiry Form
+                </h2>
+
+                <ul class="text-black text-center space-y-7 mt-4">
+
+                    <li>
+                        <input type="text" placeholder="Name" class="border border-gray-400 px-3 py-2 w-64 rounded">
+                    </li>
+
+                    <li>
+                        <input type="email" placeholder="Email Address"
+                            class="border border-gray-400 px-3 py-2 w-64 rounded">
+                    </li>
+
+                    <li>
+                        <input type="number" placeholder="Mobile Number"
+                            class="border border-gray-400 px-3 py-2 w-64 rounded">
+                    </li>
+
+                    <li>
+                        <select class="border border-gray-400 px-3 py-2 w-64 rounded">
+                            <option>Current Academic Year</option>
+                            <option>1st Year</option>
+                            <option>2nd Year</option>
+                            <option>3rd Year</option>
+                            <option>4th Year</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <select class="border border-gray-400 px-3 py-2 w-64 rounded">
+                            <option>Project Requirement</option>
+                            <option>Mini Project</option>
+                            <option>Final Year Project</option>
+                            <option>Internship Project</option>
+                        </select>
+                    </li>
+
+                </ul>
+                <button class="text-black bg-blue-600 p-3 rounded-2xl" id="button">Submit</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+    <style>
+        #b {
+
+            background-image: url(b.webp);
+            background-repeat: no-repeat;
+            background-size: 1500px;
+            background-position: center;
+            height: 600px;
+
+        }
+
+        #register {
+            left: 60%;
+            width: 375px;
+            height: 500px;
+            position: absolute;
+            bottom: 10%;
+            background-color: white;
+
+        }
+
+        #button {
+            position: absolute;
+            left: 78%;
+            bottom: 3%;
+        }
+
+        #contact {
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+        }
+        .li{
+            display:inline;
+            
+        }
+       
+    </style>
+    
+</body>
+
+</html>

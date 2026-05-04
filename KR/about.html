@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-black flex justify-between">
+        <h1 class="text-white p-5 text-4xl">KR Learning Platform</h1>
+        <ul class="text-white space-x-3 flex mr-2 mt-6">
+            <li class="li hover:underline"><a href="https://in.linkedin.com/">LinkedIn</a></li>
+            <li class="li hover:underline"><a href="https://www.youtube.com/">Youtube</a></li>
+            <li class="li hover:underline"><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+    </div>
+    <div class="flex bg-blue-600 h-10 p-2 gap-7 justify-center text-white mt-05">
+
+        <button class="cursor-pointer hover:font-bold"><a href="course.html">Course</a></button>
+        <button class="cursor-pointer hover:font-bold"><a href="home.html">Home</a></button>
+        <button class="cursor-pointer hover:font-bold"><a href="interface.html">Register Form</a></button>
+        
+    </div>
+    <div class="flex justify-around mt-4 animate-slide">
+
+        <div class="p-2 w-2xl ">
+            <h1 class="text-3xl font-bold underline">About Learning</h1>
+            <p class="mt-5">KR Learning Platform is designed to help students learn programming easily with structured
+                content, practice problems, and real-time guidance.</p>
+                
+        </div>
+        <div>
+            <img src="b.webp" class="rounded-full">
+        </div>
+    </div>
+    
+    <div class="flex justify-around mt-6 animate-slide">
+        <div><img src="image.webp" class="rounded-full"></div>
+        <div class="w-2xl p-3">
+            <h1 class="text-3xl font-bold underline">Our Mission</h1>
+            <p class="mt-3">Our mission is to simplify programming for students and help them build strong problem-solving skills. 
+            We focus on practical learning, real-world examples, and step-by-step guidance.</p>
+        </div>
+    </div>
+    <div class="flex justify-around mt-12 animate-slide">
+        <div class="mt-5 p-3">
+            <h1 class="text-2xl font-bold underline">What We Offer</h1>
+            <ul class="mt-5">
+                <li>📚 Courses (C, Python, DSA)</li>
+                <li>🧠 Practice Problems</li>
+                <li>🎯 Interview Preparation</li>
+                <li>💻 Project-Based Learning</li>
+            </ul>
+        </div>
+        <div>
+            <img src="learning.webp" class="rounded-full">
+        </div>
+    </div>
+    <footer class="bg-black text-white mt-10 p-5 text-center">
+  <p>© 2026 KR Learning Platform</p>
+  <p>Built by Jeeva</p>
+</footer>
+<style>
+     @keyframes slideIn {
+            0% {
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slide {
+            animation: slideIn 1s ease-out forwards;
+        }
+</style>
+</body>
+
+</html>

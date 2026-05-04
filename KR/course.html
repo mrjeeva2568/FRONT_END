@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-black flex justify-between">
+        <h1 class="text-white p-5 text-4xl">KR Learning Platform</h1>
+        <ul class="text-white space-x-3 flex mr-2 mt-6">
+            <li class="li hover:underline"><a href="https://in.linkedin.com/">LinkedIn</a></li>
+            <li class="li hover:underline"><a href="https://www.youtube.com/">Youtube</a></li>
+            <li class="li hover:underline"><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+
+    </div>
+    <div class="flex bg-blue-600 h-10 p-2 gap-7 justify-center text-white mt-05">
+
+        <button class="cursor-pointer hover:font-bold"><a href="home.html">Home</a></button>
+        <button class="cursor-pointer hover:font-bold"><a href="about.html">About</a></button>
+        <button class="cursor-pointer hover:font-bold"><a href="interface.html">Register Form</a></button>
+        
+    </div>
+    <div class="flex justify-around mt-12">
+        <div class="w-2/3 ">
+            <p class="p-2 mr-3">Computer programming or coding is the composition of sequences of instructions, called
+                programs, that computers can follow to perform tasks.[1][2] It involves designing and implementing
+                algorithms, step-by-step specifications of procedures, by writing code in one or more programming
+                languages. Programmers typically use high-level programming languages that are more easily intelligible
+                to humans than machine code, which is directly executed by the central processing unit. Proficient
+                programming usually requires expertise in several different subjects, including knowledge of the
+                application domain, details of programming languages and generic code libraries, specialized algorithms,
+                and formal logic.</p>
+        </div>
+        <div class=" ml-12 w-1/2">
+            <img src="download.webp" class="w-96">
+        </div>
+    </div>
+    <h1 class="text-center mt-12 text-3xl font-bold font-serif text-gray-600">Available Courses</h1>
+    <div class="flex justify-center gap-25 mt-8">
+
+        <div class="animate-slide flex flex-col items-center border-2 rounded-2xl border-red-300 w-72 p-5">
+            <h1 class="font-bold text-3xl underline mb-5">Python</h1>
+            <img src="python.webp">
+            <ul class="space-y-3 mt-3">
+                <li>✅ Easy to Learn and Use</li>
+                <li>✅ Less Code (High Productivity)</li>
+                <li>✅ Large Standard Library</li>
+                <li>✅ Free and Open Source</li>
+                <li>✅ Integration Capability</li>
+            </ul>
+        </div>
+
+        <div class="animate-slide flex flex-col items-center border-2 rounded-2xl border-red-300 w-72 p-5">
+            <h1 class="font-bold text-3xl underline mb-5">JAVA</h1>
+            <img src="java.webp">
+            <ul class="space-y-3 mt-3">
+                <li>✅ Platform Independent</li>
+                <li>✅ Object-Oriented</li>
+                <li>✅ Robust and Reliable</li>
+                <li>✅ Large Community Support</li>
+                <li>✅ Distributed Computing Support</li>
+            </ul>
+        </div>
+
+        <div class="animate-slide flex flex-col items-center border-2 rounded-2xl border-red-300 w-72 p-5">
+            <h1 class="font-bold text-3xl underline mb-5">C++</h1>
+            <img src="C++.webp">
+            <ul class="space-y-3 mt-3">
+                <li>✅ High Performance</li>
+                <li>✅ Object-Oriented Programming (OOP)</li>
+                <li>✅ Rich Standard Library (STL)</li>
+                <li>✅ Widely Used in Game Development</li>
+                <li>✅ Efficient Resource Management</li>
+            </ul>
+        </div>
+        <div>
+            <h1></h1>
+        </div>
+    </div>
+
+    <style>
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-200px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slide {
+            animation: slideIn 1s ease-out forwards;
+        }
+    </style>
+
+</body>
+
+</html>
